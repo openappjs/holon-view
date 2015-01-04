@@ -1,0 +1,36 @@
+{
+  "name": "holon-view",
+  "version": "0.0.0",
+  "description": "visualize holons",
+  "main": "index.js",
+  "scripts": {
+    "examples": "exampler-develop",
+    "examples-publish": "exampler-build && exampler-publish",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openappjs/holon-view.git"
+  },
+  "author": "ahdinosaur",
+  "license": "AGPLv3",
+  "bugs": {
+    "url": "https://github.com/openappjs/holon-view/issues"
+  },
+  "homepage": "https://github.com/openappjs/holon-view",
+  "browserify": {
+    "transform": [
+      "cssify",
+      "yamlify"
+    ]
+  },
+  "dependencies": {
+    "d3": "^3.5.3"
+  },
+  "devDependencies": {
+    "browserify": "^8.0.3",
+    "cssify": "^0.6.0",
+    "exampler": "^1.0.0",
+    "yamlify": "^0.1.2"
+  }
+}
